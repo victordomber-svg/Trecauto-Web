@@ -1,0 +1,90 @@
+:root {
+  --ink: #0a0d12;
+  --bone: #f5f2ea;
+  --amber: #ff8a1f;
+  --muted: #8a93a3;
+}
+
+.site {
+  background: var(--ink);
+  color: var(--bone);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: clip;
+}
+
+.font-display { font-family: "Barlow Condensed", sans-serif; }
+.font-mono { font-family: "JetBrains Mono", monospace; }
+
+::selection { background: var(--amber); color: var(--ink); }
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(245, 242, 234, 0.55);
+}
+
+.grid-lines {
+  background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse at 70% 40%, #000 20%, transparent 75%);
+}
+
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 35%, transparent 30%, rgba(10,13,18,0.65) 85%);
+}
+
+.clip-notch { clip-path: polygon(0 0, 78% 0, 100% 14%, 100% 100%, 0 100%); }
+
+.nav-link { position: relative; }
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -6px;
+  height: 1px; width: 100%;
+  background: var(--amber);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
+}
+.nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
+
+.marquee-track { animation: marquee 60s linear infinite; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+.ring_spin { animation: spin 18s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.field {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  background: transparent;
+  border-bottom: 1.5px solid rgba(10,13,18,0.2);
+  padding: 0.6rem 0;
+  font-size: 1.05rem;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.3s;
+}
+.field::placeholder { color: rgba(10,13,18,0.4); }
+.field:focus { border-color: #b4520a; }
+
+.map-dark { filter: grayscale(1) invert(0.92) contrast(0.9) hue-rotate(180deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track, .rotate-badge svg { animation: none; }
+}

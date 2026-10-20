@@ -1,0 +1,117 @@
+{
+  "project_title": "Trecauto – Recambios para el automóvil (Jerez de la Frontera)",
+  "language": "es",
+  "app_type": "landing_page",
+  "theme": {
+    "mode": "dark_industrial_performance",
+    "primary_archetype": "THE PERFORMANCE PRO (Tactical Precision & Industrial Elegance)",
+    "colors": {
+      "bg_main": "#090D14",
+      "bg_card": "#131B2A",
+      "bg_card_hover": "#1E293B",
+      "border_subtle": "rgba(255, 255, 255, 0.1)",
+      "border_active": "rgba(245, 158, 11, 0.4)",
+      "text_primary": "#F8FAFC",
+      "text_secondary": "#94A3B8",
+      "text_muted": "#64748B",
+      "accent_amber": "#F59E0B",
+      "accent_amber_glow": "#FF6B00",
+      "accent_emerald": "#10B981",
+      "cta_whatsapp": "#22C55E"
+    }
+  },
+  "typography": {
+    "heading_font": "Barlow Condensed, Syne, sans-serif",
+    "body_font": "Plus Jakarta Sans, Inter, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight",
+    "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight",
+    "h3_card": "text-xl sm:text-2xl font-bold tracking-tight",
+    "body_text": "text-base text-slate-300 leading-relaxed",
+    "label_overline": "text-xs font-mono tracking-[0.2em] text-amber-500 uppercase"
+  },
+  "image_urls": {
+    "hero_bg": {
+      "url": "https://images.pexels.com/photos/6517339/pexels-photo-6517339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Motor de coche detallado sobre banco de trabajo en taller moderno",
+      "usage": "Hero background with gradient overlay from-slate-950/90 via-slate-950/70 to-slate-950"
+    },
+    "bento_brakes": {
+      "url": "https://images.pexels.com/photos/34277926/pexels-photo-34277926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Freno de disco y pinza de rendimiento",
+      "usage": "Tarjeta Bento para Sistema de Frenos y Suspensión"
+    },
+    "bento_engine": {
+      "url": "https://images.unsplash.com/photo-1570129476815-ba368ac77013?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxhdXRvJTIwc3BhcmUlMjBwYXJ0cyUyMG1lY2hhbmljcyUyMGdhcmFnZSUyMHN0b3JlJTIwZW5naW5lJTIwY29tcG9uZW50cyUyMGhlcm98ZW58MHx8fHwxNzkyNDY4MDI2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Componentes de motor e inyección metálicos",
+      "usage": "Tarjeta Bento para Motor y Transmisión"
+    },
+    "bento_oil": {
+      "url": "https://images.unsplash.com/photo-1590227763209-821c686b932f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwzfHxjYXIlMjBicmFrZSUyMGRpc2MlMjBlbmdpbmUlMjBvaWwlMjBhdXRvJTIwcGFydHMlMjBzaGVsZiUyMHNob3B8ZW58MHx8fHwxNzkyNDY4MDI2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Lubricantes y aceites de alto rendimiento en estantería",
+      "usage": "Tarjeta Bento para Mantenimiento y Fluidos"
+    },
+    "workshop_location": {
+      "url": "https://images.unsplash.com/photo-1676018366904-c083ed678e60?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwzfHxhdXRvJTIwc3BhcmUlMjBwYXJ0cyUyMG1lY2hhbmljcyUyMGdhcmFnZSUyMHN0b3JlJTIwZW5naW5lJTIwY29tcG9uZW50cyUyMGhlcm98ZW58MHx8fHwxNzkyNDY4MDI2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Taller y mostrador de recambios profesional",
+      "usage": "Sección de ubicación física y atención en Jerez"
+    }
+  },
+  "key_functionalities": [
+    "Navegación fija glassmorphism con estado activo y accesos rápidos de contacto",
+    "Hero cinético con revelado de texto por líneas, métricas clave y llamadas a la acción inmediatas",
+    "Marquesina lenta editorial 'LÍDERES EN RECAMBIOS MULTIMARCA · JEREZ DE LA FRONTERA · ATENCIÓN ESPECIALIZADA · ENVÍOS RÁPIDOS'",
+    "Bento Grid interactivo de Categorías y Piezas (Frenos, Motor, Mantenimiento, Electricidad, Iluminación, Carrocería)",
+    "Pasos para solicitar pieza (1. Datos Vehículo, 2. Pieza solicitada, 3. Presupuesto sin compromiso, 4. Entrega/Recogida)",
+    "Sección 'Por qué elegir Trecauto' con distintivos de confianza, catálogo multimarca y asesoramiento técnico",
+    "Formulario interactivo para consulta de piezas (Nombre, Teléfono, Marca, Modelo, Año, Pieza requerida, Mensaje) conectado a API FastAPI / DB",
+    "Sección de ubicación física completa: Paseo de las Delicias 50 (Jerez), mapa incrustado de Google Maps, mapa interactivo, coordenadas GPS 36.68282, -6.11095, indicación de cómo llegar",
+    "Botones flotantes y fijos de Llamada Inmediata (856 100 292) y WhatsApp directo con mensaje predefinido",
+    "Logotipo original SVG de Trecauto con acabado metálico/deportivo y favicon personalizado"
+  ],
+  "component_structure": {
+    "Header": "Header con cristal translúcido (backdrop-blur-xl bg-slate-950/80), logo SVG, menú de navegación, botón WhatsApp y teléfono",
+    "Hero": "Hero cinético con título en tipografía Barlow, overlay graduado sobre foto de recambios, badges de garantía y formulario rápido / CTAs",
+    "Marquee": "Marquesina continua en baja velocidad con tipografía Mono y divisores en ámbar",
+    "CategoriesBento": "Bento Grid asimétrico (Mode A) con imágenes de alta resolución, efecto hover lift, listado de productos y etiquetas",
+    "PartRequestForm": "Formulario accesible con validación Zod/React Hook Form, selectores de vehículo y envío con toast de confirmación Sonner",
+    "WhyUs": "4 pilares fundamentales con iconos Phosphor/Lucide, bordes pulidos y conteo estadístico",
+    "Steps": "Línea de tiempo paso a paso numerada para guiar al cliente antes de acudir presencialmente",
+    "Location": "Contenedor industrial con mapa interactivo de Jerez, datos de dirección exacta, coordenadas GPS y botón 'Cómo llegar'",
+    "Footer": "Pie de página completo con enlaces legales, resumen de servicios, contacto y firma de Trecauto"
+  },
+  "data_testid_strategy": {
+    "navigation_link_home": "nav-link-home",
+    "navigation_link_categories": "nav-link-categories",
+    "navigation_link_request": "nav-link-request",
+    "navigation_link_location": "nav-link-location",
+    "call_cta_button": "btn-call-now",
+    "whatsapp_cta_button": "btn-whatsapp",
+    "part_request_form": "part-request-form",
+    "input_name": "input-client-name",
+    "input_phone": "input-client-phone",
+    "input_vehicle_make": "input-vehicle-make",
+    "input_vehicle_model": "input-vehicle-model",
+    "input_vehicle_year": "input-vehicle-year",
+    "input_part_needed": "input-part-needed",
+    "input_message": "input-message",
+    "submit_request_button": "btn-submit-part-request",
+    "google_map_iframe": "google-map-embed"
+  },
+  "instructions_to_main_agent": [
+    "No usar 'Inter' para los encabezados principales (H1/H2). Usar Barlow Condensed o Syne con tracking-tight y mayúsculas.",
+    "El sitio debe ser 100% en español fluido y profesional.",
+    "Mantener la información real del comercio: Trecauto – Recambios para el automóvil, Dirección: Paseo de las Delicias, 50 · 11406 Jerez de la Frontera (Cádiz), Teléfono: 856 100 292, GPS: 36.68282, -6.11095.",
+    "Asegurar que el formulario de solicitud de repuestos envíe los datos al backend FastAPI (/api/part-requests) y guarde la consulta correctamente.",
+    "Incluir animaciones suaves de entrada con Framer Motion en cada sección con staggerChildren.",
+    "Garantizar respuesta perfecta en pantallas pequeñas (390px mobile).",
+    "Añadir todos los data-testid especificados para pruebas automatizadas."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Evitar layouts genéricos o centrado absoluto sin contraste. Utilizar la retícula Bento asimétrica.",
+    "Aplicar bordes finos con brillo sutil (border-slate-800 hover:border-amber-500/50 transition-all).",
+    "No usar emojis como iconos principales de UI. Usar lucide-react o SVGs personalizados.",
+    "Mantener contraste WCAG AA alto en textos sobre fondos oscuros.",
+    "Usar Sonner para mensajes emergentes tras enviar formularios."
+  ]
+}
